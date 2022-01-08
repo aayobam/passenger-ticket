@@ -31,8 +31,10 @@ def ticket_price():
     ages = {x for x in passengers_details.values()}
     print("ages = ", ages)
     for i in ages:
-        if i >=3:
+        if i >= 3:
             total += price
+        else:
+            total += 0
     print("passenger details = ", passengers_details)
     print("total price = ", "$"+str(total))
         
