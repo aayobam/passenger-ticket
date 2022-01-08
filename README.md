@@ -14,4 +14,4 @@
 42
 
 # Sample Output 
-- 400
+400
