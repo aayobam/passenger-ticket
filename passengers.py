@@ -6,17 +6,17 @@ def ticket_price():
     passengers_list = []
     passengers_ages = []
     passengers_details = {}
-    price_list = []
-    passengers_records = {}
+    price = 100
+    total = 0
 
     # this creates 5 passengers and appends to passengers list
-    for num in range(1,3):
+    for num in range(1,6):
         passenger = str(input(f"enter passenger {num}: "))
         passengers_list.append(passenger)
     print(passengers_list)
     
     # create passengers ages and append to passengers_ages list
-    for ages in range(1, 3):
+    for ages in range(1, 6):
         try:
             passenger_age = int(input(f"Enter age {ages}: "))
         except Exception as e:
@@ -27,12 +27,17 @@ def ticket_price():
     print(passengers_ages)
     
     # fetch passengers lists and ages and append to passengers_details as dictionary
-    for passenger in passengers_list:
-        for pass_ages in passengers_ages:
-            passengers_details = dict(zip(passengers_list, passengers_ages))
-    print("passengers details = ",passengers_details)
-    
+    passengers_details = dict(zip(passengers_list, passengers_ages))
+    ages = {x for x in passengers_details.values()}
+    print("ages = ", ages)
+    for i in ages:
+        if i >=3:
+            total += price
+    print("passenger details = ", passengers_details)
+    print("total price = ", "$"+str(total))
+        
 ticket_price()
+
 
 #solution 2
 # def passenger_ticket():
