@@ -42,7 +42,7 @@ def ticket_price():
     # fetch passengers lists and ages and append to passengers_details as dictionary
     for passenger in passengers_list:
         for pass_ages in passengers_ages:
-            passengers_details[passenger] = [pass_ages]
+            passengers_details = dict(zip(passengers_list, passengers_ages))
     print("passengers details = ",passengers_details)
     
 ticket_price()
