@@ -1,21 +1,8 @@
 
 
-
+# solution 1
 def ticket_price():
-    # global passengers_list
-    # passengers_list = []
-
-    # global passengers_ages
-    # passengers_ages = []
-
-    # global passengers_details
-    # passengers_details = {}
-
-    # global price_list
-    # price_list = []
-
-    # global passengers_records
-    # passengers_records = {}
+   
     passengers_list = []
     passengers_ages = []
     passengers_details = {}
@@ -46,3 +33,15 @@ def ticket_price():
     print("passengers details = ",passengers_details)
     
 ticket_price()
+
+#solution 2
+# def passenger_ticket():
+#     p_ages = [18, 24, 2, 5, 42]
+#     price = 100
+#     total = 0
+
+#     for age in p_ages:
+#         if age >= 3:
+#             total += price
+#     print("$"+""+ str(total))
+# passenger_ticket()
